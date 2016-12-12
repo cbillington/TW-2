@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrariesTest;
 
 namespace TW_2
 {
-    public partial class frmDashboard : Form
+    public partial class FrmDashboard : Form
     {
-        public frmDashboard()
+        public FrmDashboard()
         {
 
             InitializeComponent();
@@ -37,5 +38,7 @@ namespace TW_2
         {
 
         }
+
+       
     }
 }
