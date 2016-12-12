@@ -1,4 +1,7 @@
-﻿namespace TW_2
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace TW_2
 {
     partial class FrmDashboard
     {
@@ -149,6 +152,7 @@
             this.radioButton4.Text = "Package Wizard";
             this.radioButton4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -176,7 +180,7 @@
             this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton2.FlatAppearance.BorderSize = 0;
             this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Font = new System.Drawing.Font("Roboto Condensed", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.radioButton2.Image = ((System.Drawing.Image)(resources.GetObject("radioButton2.Image")));
             this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButton2.Location = new System.Drawing.Point(0, 0);
@@ -190,32 +194,35 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.ItemSize = new System.Drawing.Size(0, 1);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(903, 497);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage1.Location = new System.Drawing.Point(4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(895, 471);
+            this.tabPage1.Size = new System.Drawing.Size(895, 488);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(895, 471);
+            this.tabPage2.Size = new System.Drawing.Size(895, 488);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
